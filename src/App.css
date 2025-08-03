@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/* General layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar styling */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand {
+  font-weight: bold;
+  color: #0d6efd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-brand:hover {
+  color: #142ebc;
 }
 
-.App-link {
-  color: #61dafb;
+/* Nav links */
+.nav-link {
+  color: #343a40;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover {
+  background-color: #041e38;
+  color: #0d6efd;
+}
+
+/* Active link styling */
+.nav-link.active {
+  font-weight: bold;
+  color: #0d6efd;
+  background-color: #dee2e6;
+}
+
+/* Optional: container spacing */
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/* Glowing Spy28 logo */
+.glowing-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(17, 4, 154);
+  text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 20px aqua;
+  animation: glowPulse 2s infinite ease-in-out;
+  cursor: pointer;
+}
+
+
+
+.glowing-logo:hover{
+
+  text-shadow:
+    0 0 10px aqua,
+    0 0 20px aqua,
+    0 0 30px aqua;
+
 }
