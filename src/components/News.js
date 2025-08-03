@@ -10,7 +10,10 @@ const News = ({ category, pageSize, loadingBarRef }) => {
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
-  const apiKey = '70e146c779e24c0d89183cbbf58c3fad';
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
+  console.log("API Key:", process.env.REACT_APP_NEWS_API_KEY);
+
+
 
   const fetchNews = async () => {
     loadingBarRef.current?.continuousStart();
