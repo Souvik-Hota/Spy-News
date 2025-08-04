@@ -10,8 +10,9 @@ const News = ({ category, pageSize, loadingBarRef }) => {
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
-  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
-  console.log("API Key:", process.env.REACT_APP_NEWS_API_KEY);
+const apiKey = process.env.REACT_APP_NEWSAPI_API_KEY;
+console.log("API Key:", apiKey); // should log your actual key
+
 
 
 
